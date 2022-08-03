@@ -1,0 +1,32 @@
+{
+  "name": "console-formatter",
+  "version": "0.0.1",
+  "description": "console formatter for cucumber framework",
+  "main": "index.js",
+  "scripts": {},
+  "man": "src/formatter.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qavajs/console-formatter.git"
+  },
+  "keywords": [
+    "cucumber",
+    "formatter"
+  ],
+  "authors": [
+    "Alexander Galichenko"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/qavajs/console-formatter/issues"
+  },
+  "homepage": "https://github.com/qavajs/console-formatter#readme",
+  "dependencies": {
+    "chalk": "^5.0.1",
+    "cli-table3": "^0.6.2",
+    "figures": "^3.2.0"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^8.5.1"
+  }
+}
