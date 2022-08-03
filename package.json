@@ -2,9 +2,8 @@
   "name": "console-formatter",
   "version": "0.0.1",
   "description": "console formatter for cucumber framework",
-  "main": "index.js",
   "scripts": {},
-  "man": "src/formatter.js",
+  "main": "src/formatter.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/qavajs/console-formatter.git"
