@@ -77,9 +77,12 @@ class PrettyFormatter extends Formatter {
     }
 
     readTestCase(testCase) {
+        const pickleSteps = this.testCases[testCase.pickleId].steps;
         this.testCases[testCase.id] = this.testCases[testCase.pickleId];
-        for (const step of this.testCases[testCase.id].steps) {
-            step.stepId = testCase.testSteps.find(s => s.pickleStepId === step.id).id;
+        this.testCases[testCase.id].testSteps = testCase.testSteps;
+        for (const step of this.testCases[testCase.id].testSteps) {
+            const testStep = pickleSteps.find(ps => ps.id === step.pickleStepId);
+            step.stepText = (testStep && testStep.text) ? testStep.text : this.hookKeyword(this.testCases[testCase.id].testSteps);
         }
         delete this.testCases[testCase.pickleId];
     }
@@ -90,7 +93,7 @@ class PrettyFormatter extends Formatter {
     }
 
     finishStep(testStep) {
-        const step = this.testCases[testStep.testCaseStartedId].steps.find(s => s.stepId === testStep.testStepId);
+        const step = this.testCases[testStep.testCaseStartedId].testSteps.find(s => s.id === testStep.testStepId);
         if (step) {
             step.testStepResult = testStep.testStepResult;
         }
@@ -117,13 +120,13 @@ class PrettyFormatter extends Formatter {
             lines.push(chalk.cyan(tc.tags.map(tag => tag.name).join(' ')));
         }
         lines.push(chalk.magenta('Scenario: ') + tc.name);
-        lines.push(...tc.steps.map(step => this.drawStep(step)));
+        lines.push(...tc.testSteps.map(step => this.drawStep(step)));
         lines.push('');
         console.log(lines.join('\n'))
     }
 
     drawStep(step) {
-        let line = this.indent + chalk.bold(this.keywords[step.type] ?? '*') + ' ' + step.text;
+        let line = this.indent + chalk.bold(this.keywords[step.type] ?? '*') + ' ' + step.stepText;
         if (step.argument && step.argument.dataTable) {
             line += '\n' + this.drawDataTable(step.argument.dataTable)
         }
@@ -151,11 +154,15 @@ class PrettyFormatter extends Formatter {
 
     updateRunStatus(testCase) {
         this.runStatus.total++;
-        if (testCase.steps.every(step => step.testStepResult.status === Status.PASSED)) {
+        if (testCase.testSteps.every(step => step.testStepResult.status === Status.PASSED)) {
             this.runStatus.passed++
         } else {
             this.runStatus.failed++
         }
+    }
+
+    hookKeyword(steps) {
+        return steps.every(element => element.stepText === undefined || element.stepText === 'Before') ? 'Before' : 'After'
     }
 
 }

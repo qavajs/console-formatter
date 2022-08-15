@@ -1,6 +1,6 @@
 {
   "name": "@qavajs/console-formatter",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "console formatter for cucumber framework",
   "scripts": {},
   "main": "src/formatter.js",
