@@ -82,6 +82,7 @@ class PrettyFormatter extends Formatter {
         this.testCases[testCase.id].testSteps = testCase.testSteps;
         for (const step of this.testCases[testCase.id].testSteps) {
             const testStep = pickleSteps.find(ps => ps.id === step.pickleStepId);
+            step.argument = testStep ? testStep.argument : undefined;
             step.stepText = (testStep && testStep.text) ? testStep.text : this.hookKeyword(this.testCases[testCase.id].testSteps);
         }
         delete this.testCases[testCase.pickleId];
