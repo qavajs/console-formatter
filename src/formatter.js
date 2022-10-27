@@ -69,7 +69,6 @@ class PrettyFormatter extends Formatter {
         if (envelope.testRunFinished) {
             return this.finishTestRun();
         }
-
     }
 
     readPickle(pickle) {
@@ -85,12 +84,10 @@ class PrettyFormatter extends Formatter {
             step.argument = testStep ? testStep.argument : undefined;
             step.stepText = (testStep && testStep.text) ? testStep.text : this.hookKeyword(this.testCases[testCase.id].testSteps);
         }
-        delete this.testCases[testCase.pickleId];
     }
 
     startTestCase(testCase) {
         this.testCases[testCase.id] = this.testCases[testCase.testCaseId];
-        delete this.testCases[testCase.testCaseId];
     }
 
     finishStep(testStep) {
@@ -114,6 +111,7 @@ class PrettyFormatter extends Formatter {
     }
 
     finishTestCase(testCase) {
+        if (testCase.willBeRetried) return
         const tc = this.testCases[testCase.testCaseStartedId];
         this.updateRunStatus(tc);
         const lines = [];
