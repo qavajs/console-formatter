@@ -38,6 +38,7 @@ class PrettyFormatter extends Formatter {
         }
     };
     testCases = {};
+    stepDefinitions = {};
     runStatus = {
         passed: 0,
         failed: 0,
@@ -48,9 +49,14 @@ class PrettyFormatter extends Formatter {
     constructor(options) {
         super(options);
         options.eventBroadcaster.on('envelope', this.processEnvelope.bind(this));
+        this.formatterOptions = options.parsedArgvOptions.console;
+        this.showLogs = this.formatterOptions?.showLogs ?? false;
     }
 
     async processEnvelope(envelope) {
+        if (envelope.stepDefinition || envelope.hook) {
+            return this.readStepDefinition(envelope);
+        }
         if (envelope.pickle) {
             return this.readPickle(envelope.pickle)
         }
@@ -71,6 +77,11 @@ class PrettyFormatter extends Formatter {
         }
     }
 
+    readStepDefinition(stepDefinition) {
+        const definition = stepDefinition.stepDefinition ?? stepDefinition.hook;
+        this.stepDefinitions[definition.id] = definition.sourceReference.uri + ':' + definition.sourceReference.location.line;
+    }
+
     readPickle(pickle) {
         this.testCases[pickle.id] = pickle;
     }
@@ -83,6 +94,7 @@ class PrettyFormatter extends Formatter {
             const testStep = pickleSteps.find(ps => ps.id === step.pickleStepId);
             step.argument = testStep ? testStep.argument : undefined;
             step.stepText = (testStep && testStep.text) ? testStep.text : this.hookKeyword(this.testCases[testCase.id].testSteps);
+            step.location = this.stepDefinitions[step.hookId ?? step.stepDefinitionIds[0]] ?? ''
         }
     }
 
@@ -112,7 +124,11 @@ class PrettyFormatter extends Formatter {
 
     finishTestCase(testCase) {
         if (testCase.willBeRetried) return
+        const result = this.eventDataCollector.getTestCaseAttempt(testCase.testCaseStartedId);
         const tc = this.testCases[testCase.testCaseStartedId];
+        tc.testSteps.forEach(step => {
+            step.logs = result.stepAttachments[step.id]?.filter(attachment => attachment.mediaType === 'text/x.cucumber.log+plain') ?? [];
+        });
         this.updateRunStatus(tc);
         const lines = [];
         if (tc.tags.length > 0) {
@@ -126,6 +142,12 @@ class PrettyFormatter extends Formatter {
 
     drawStep(step) {
         let line = this.indent + chalk.bold(this.keywords[step.type] ?? '*') + ' ' + step.stepText;
+        line += ' ' + chalk.gray(step.location);
+        if (this.showLogs) {
+            for (const log of step.logs) {
+                line += '\n' + this.indent + log.body;
+            }
+        }
         if (step.argument && step.argument.dataTable) {
             line += '\n' + this.drawDataTable(step.argument.dataTable)
         }
