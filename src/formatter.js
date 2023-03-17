@@ -18,6 +18,16 @@ class PrettyFormatter extends Formatter {
         [Status.AMBIGUOUS]: 'yellow',
         [Status.PENDING]: 'grey'
     };
+
+    statusIcons = {
+        [Status.PASSED]: '✓',
+        [Status.FAILED]: '✗',
+        [Status.SKIPPED]: '-',
+        [Status.UNDEFINED]: '?',
+        [Status.AMBIGUOUS]: '?',
+        [Status.PENDING]: '?'
+    };
+
     tableOptions = {
         chars: {
             'top': '' ,
@@ -116,9 +126,9 @@ class PrettyFormatter extends Formatter {
             chalk.green(figures.square.repeat(Math.round(passRate * this.barChartLength))) +
             chalk.red(figures.square.repeat(Math.round(failRate * this.barChartLength)))
         );
-        console.log('Passed: ' + this.runStatus.passed + ' (' + passRate * 100 + '%)');
-        console.log('Failed: ' + this.runStatus.failed + ' (' + failRate * 100 + '%)');
-        console.log('Total: ' + this.runStatus.total);
+        console.log(`Passed: ${this.runStatus.passed} (${Math.round(passRate * 10000) / 100}%)`);
+        console.log(`Failed: ${this.runStatus.failed} (${Math.round(failRate * 10000) / 100}%)`);
+        console.log(`Total: ${this.runStatus.total}`);
 
     }
 
@@ -141,21 +151,21 @@ class PrettyFormatter extends Formatter {
     }
 
     drawStep(step) {
-        let line = this.indent + chalk.bold(this.keywords[step.type] ?? '*') + ' ' + step.stepText;
-        line += ' ' + chalk.gray(step.location);
+        let line = this.indent + chalk.bold(this.statusIcons[step.testStepResult.status]) + ' ' + step.stepText;
+        line += ` ${chalk.gray(step.location)}`;
         if (this.showLogs) {
             for (const log of step.logs) {
-                line += '\n' + this.indent + log.body;
+                line += `\n${this.indent}${log.body}`;
             }
         }
         if (step.argument && step.argument.dataTable) {
-            line += '\n' + this.drawDataTable(step.argument.dataTable)
+            line += `\n${this.drawDataTable(step.argument.dataTable)}`
         }
         if (step.argument && step.argument.docString) {
-            line += '\n' + this.drawDocString(step.argument.docString)
+            line += `\n${this.drawDocString(step.argument.docString)}`;
         }
         if ([Status.FAILED, Status.AMBIGUOUS].includes(step.testStepResult.status)) {
-            line += '\n' + this.indent + step.testStepResult.message
+            line += `\n${this.indent + step.testStepResult.message}`;
         }
         return chalk[this.statusColors[step.testStepResult.status]](line)
     }
