@@ -1,3 +1,6 @@
+## 0.3.0
+- added support of named hooks
+
 ## 0.2.1
 - added step definition locations
 

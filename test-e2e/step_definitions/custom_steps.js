@@ -1,6 +1,7 @@
 const { Given, When, Before, After } = require('@cucumber/cucumber');
 
 Before(() => {});
+Before({name: 'named before'}, () => {});
 Given('background', () => {});
 When('passed step', () => {});
 When('failed step', () => { throw new Error('failed step') });
@@ -36,4 +37,4 @@ When('failed step with log', function () {
     throw new Error('failed step')
 });
 After(() => {});
-
+After({name: 'named after'}, () => {});
