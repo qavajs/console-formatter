@@ -106,7 +106,7 @@ class PrettyFormatter extends Formatter {
         for (const step of this.testCases[testCase.id].testSteps) {
             const testStep = pickleSteps.find(ps => ps.id === step.pickleStepId);
             step.argument = testStep ? testStep.argument : undefined;
-            step.stepText = (testStep && testStep.text) ? testStep.text : this.hookKeyword(this.testCases[testCase.id].testSteps, step);
+            step.stepText = testStep?.text ? testStep.text : this.hookKeyword(this.testCases[testCase.id].testSteps, step);
             const stepDefinition = this.stepDefinitions[step.hookId ?? step.stepDefinitionIds[0]];
             step.location = stepDefinition ? stepDefinition.location : ''
         }
