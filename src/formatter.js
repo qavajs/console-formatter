@@ -89,7 +89,10 @@ class PrettyFormatter extends Formatter {
 
     readStepDefinition(stepDefinition) {
         const definition = stepDefinition.stepDefinition ?? stepDefinition.hook;
-        this.stepDefinitions[definition.id] = definition.sourceReference.uri + ':' + definition.sourceReference.location.line;
+        this.stepDefinitions[definition.id] = {
+            name: definition.name,
+            location: definition.sourceReference.uri + ':' + definition.sourceReference.location.line
+        };
     }
 
     readPickle(pickle) {
@@ -103,8 +106,9 @@ class PrettyFormatter extends Formatter {
         for (const step of this.testCases[testCase.id].testSteps) {
             const testStep = pickleSteps.find(ps => ps.id === step.pickleStepId);
             step.argument = testStep ? testStep.argument : undefined;
-            step.stepText = (testStep && testStep.text) ? testStep.text : this.hookKeyword(this.testCases[testCase.id].testSteps);
-            step.location = this.stepDefinitions[step.hookId ?? step.stepDefinitionIds[0]] ?? ''
+            step.stepText = testStep?.text ? testStep.text : this.hookKeyword(this.testCases[testCase.id].testSteps, step);
+            const stepDefinition = this.stepDefinitions[step.hookId ?? step.stepDefinitionIds[0]];
+            step.location = stepDefinition ? stepDefinition.location : ''
         }
     }
 
@@ -192,7 +196,9 @@ class PrettyFormatter extends Formatter {
         }
     }
 
-    hookKeyword(steps) {
+    hookKeyword(steps, testStep) {
+        const hook = this.stepDefinitions[testStep.hookId];
+        if (hook.name) return hook.name
         return steps.every(element => element.stepText === undefined || element.stepText === 'Before') ? 'Before' : 'After'
     }
 

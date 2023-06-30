@@ -1,9 +1,9 @@
 {
   "name": "@qavajs/console-formatter",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "console formatter for cucumber framework",
   "scripts": {
-    "test-e2e": "qavajs run --config test-e2e/config.js"
+    "test:e2e": "qavajs run --config test-e2e/config.js"
   },
   "main": "src/formatter.js",
   "repository": {
@@ -29,8 +29,8 @@
     "figures": "^3.2.0"
   },
   "devDependencies": {
-    "@cucumber/cucumber": "^9.0.0",
-    "@qavajs/cli": "^0.0.19",
-    "@qavajs/memory": "^1.2.0"
+    "@cucumber/cucumber": "^9.2.0",
+    "@qavajs/cli": "^0.26.0",
+    "@qavajs/memory": "^1.5.1"
   }
 }
