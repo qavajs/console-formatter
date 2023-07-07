@@ -1,6 +1,6 @@
 # @qavajs/console-formatter
 
-This is console formatter for cucumber framework
+Console formatter for cucumber framework
 
 ### Installation
 To install formatter run

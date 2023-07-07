@@ -157,11 +157,6 @@ class PrettyFormatter extends Formatter {
     drawStep(step) {
         let line = this.indent + chalk.bold(this.statusIcons[step.testStepResult.status]) + ' ' + step.stepText;
         line += ` ${chalk.gray(step.location)}`;
-        if (this.showLogs) {
-            for (const log of step.logs) {
-                line += `\n${this.indent}${log.body}`;
-            }
-        }
         if (step.argument && step.argument.dataTable) {
             line += `\n${this.drawDataTable(step.argument.dataTable)}`
         }
@@ -170,6 +165,11 @@ class PrettyFormatter extends Formatter {
         }
         if ([Status.FAILED, Status.AMBIGUOUS].includes(step.testStepResult.status)) {
             line += `\n${this.indent + step.testStepResult.message}`;
+        }
+        if (this.showLogs) {
+            for (const log of step.logs) {
+                line += chalk.reset(`\n${this.indent}LOG: ${log.body}`);
+            }
         }
         return chalk[this.statusColors[step.testStepResult.status]](line)
     }

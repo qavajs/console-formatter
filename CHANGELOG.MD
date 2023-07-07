@@ -1,3 +1,6 @@
+## 0.4.0
+- updated logs displaying
+
 ## 0.3.0
 - added support of named hooks
 
