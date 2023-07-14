@@ -1,4 +1,5 @@
-## 0.4.1
+## 0.5.0
+- added step gherkin location
 - fixed issue with identifying hook keyword
 
 ## 0.4.0

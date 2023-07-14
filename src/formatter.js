@@ -141,6 +141,7 @@ class PrettyFormatter extends Formatter {
         const result = this.eventDataCollector.getTestCaseAttempt(testCase.testCaseStartedId);
         const tc = this.testCases[testCase.testCaseStartedId];
         tc.testSteps.forEach(step => {
+            step.gherkinLocation = this.stepGherkinLocation(step, result);
             step.logs = result.stepAttachments[step.id]?.filter(attachment => attachment.mediaType === 'text/x.cucumber.log+plain') ?? [];
         });
         this.updateRunStatus(tc);
@@ -156,7 +157,7 @@ class PrettyFormatter extends Formatter {
 
     drawStep(step) {
         let line = this.indent + chalk.bold(this.statusIcons[step.testStepResult.status]) + ' ' + step.stepText;
-        line += ` ${chalk.gray(step.location)}`;
+        line += ` ${chalk.gray(step.gherkinLocation)}${chalk.gray(step.location)}`;
         if (step.argument && step.argument.dataTable) {
             line += `\n${this.drawDataTable(step.argument.dataTable)}`
         }
@@ -201,6 +202,21 @@ class PrettyFormatter extends Formatter {
         if (hook.name) return hook.name
         const hookIndex = steps.findIndex(element => element.hookId === testStep.hookId);
         return steps.slice(0, hookIndex).some(element => element.pickleStepId) ? 'After' : 'Before'
+    }
+
+    stepGherkinLocation(step, scenario) {
+        if (step.pickleStepId) {
+            const [ scenarioPickleId ] = scenario.pickle.astNodeIds;
+            const pickle = scenario.pickle.steps.find(e => e.id === step.pickleStepId);
+            const [ astNodeId] = pickle.astNodeIds;
+            const children = scenario.gherkinDocument.feature.children;
+            const scenarioSource = children.find(child => child.scenario?.id === scenarioPickleId);
+            const backgroundSource = children.find(child => child.background);
+            const stepsSources = [].concat(scenarioSource?.scenario?.steps).concat(backgroundSource?.background?.steps).filter(x => x);
+            const stepSource = stepsSources.find(s => s.id === astNodeId);
+            return stepSource ? `${scenario.gherkinDocument.uri}:${stepSource.location.line} ` : '';
+        }
+        return '';
     }
 
 }
