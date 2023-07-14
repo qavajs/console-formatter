@@ -199,7 +199,8 @@ class PrettyFormatter extends Formatter {
     hookKeyword(steps, testStep) {
         const hook = this.stepDefinitions[testStep.hookId];
         if (hook.name) return hook.name
-        return steps.every(element => element.stepText === undefined || element.stepText === 'Before') ? 'Before' : 'After'
+        const hookIndex = steps.findIndex(element => element.hookId === testStep.hookId);
+        return steps.slice(0, hookIndex).some(element => element.pickleStepId) ? 'After' : 'Before'
     }
 
 }

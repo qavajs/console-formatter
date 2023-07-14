@@ -1,3 +1,6 @@
+## 0.4.1
+- fixed issue with identifying hook keyword
+
 ## 0.4.0
 - updated logs displaying
 
