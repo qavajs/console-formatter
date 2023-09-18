@@ -61,6 +61,7 @@ class PrettyFormatter extends Formatter {
         options.eventBroadcaster.on('envelope', this.processEnvelope.bind(this));
         this.formatterOptions = options.parsedArgvOptions.console;
         this.showLogs = this.formatterOptions?.showLogs ?? false;
+        this.startTimestamp = Date.now();
     }
 
     async processEnvelope(envelope) {
@@ -124,6 +125,7 @@ class PrettyFormatter extends Formatter {
     }
 
     finishTestRun() {
+        const duration = new Date(Date.now() - this.startTimestamp);
         const passRate = this.runStatus.passed / this.runStatus.total;
         const failRate = this.runStatus.failed / this.runStatus.total;
         console.log(
@@ -132,8 +134,7 @@ class PrettyFormatter extends Formatter {
         );
         console.log(`Passed: ${this.runStatus.passed} (${Math.round(passRate * 10000) / 100}%)`);
         console.log(`Failed: ${this.runStatus.failed} (${Math.round(failRate * 10000) / 100}%)`);
-        console.log(`Total: ${this.runStatus.total}`);
-
+        console.log(`Total: ${this.runStatus.total} (${duration.getMinutes()}m ${duration.getSeconds()}s)`);
     }
 
     finishTestCase(testCase) {

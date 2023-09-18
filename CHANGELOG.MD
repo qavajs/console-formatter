@@ -1,3 +1,6 @@
+## 0.6.0
+- added execution time display
+
 ## 0.5.0
 - added step gherkin location
 - fixed issue with identifying hook keyword
