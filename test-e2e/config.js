@@ -8,7 +8,6 @@ module.exports = {
             console: {
                 showLogs: true
             }
-        },
-        publishQuiet: true,
+        }
     }
 }
