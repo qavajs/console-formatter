@@ -1,3 +1,6 @@
+## 0.7.0
+- print progress of executing tests
+
 ## 0.6.0
 - added execution time display
 

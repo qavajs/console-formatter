@@ -1,6 +1,8 @@
 const { Given, When, Before, After } = require('@cucumber/cucumber');
 
-Before(() => {});
+Before(async () => {
+    await new Promise(r => setTimeout(() => r(), 400));
+});
 Before({name: 'named before'}, () => {});
 Given('background', () => {});
 When('passed step', () => {});

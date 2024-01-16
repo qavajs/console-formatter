@@ -2,6 +2,7 @@ const { Formatter, Status } = require('@cucumber/cucumber');
 const chalk = require('chalk');
 const Table = require('cli-table3');
 const figures = require('figures');
+const { SingleBar, Presets} = require('cli-progress');
 
 class PrettyFormatter extends Formatter {
     indent = '  ';
@@ -55,6 +56,8 @@ class PrettyFormatter extends Formatter {
         total: 0
     };
     barChartLength = 60;
+    totalTestCases = 0;
+    doneTestCases = 0;
 
     constructor(options) {
         super(options);
@@ -62,9 +65,17 @@ class PrettyFormatter extends Formatter {
         this.formatterOptions = options.parsedArgvOptions.console;
         this.showLogs = this.formatterOptions?.showLogs ?? false;
         this.startTimestamp = Date.now();
+        this.progressBar = new SingleBar({
+            emptyOnZero: true,
+            fps: 2,
+            barsize: this.barChartLength
+        }, Presets.shades_classic);
     }
 
     async processEnvelope(envelope) {
+        if (envelope.testRunStarted) {
+            return this.startTestRun();
+        }
         if (envelope.stepDefinition || envelope.hook) {
             return this.readStepDefinition(envelope);
         }
@@ -88,6 +99,10 @@ class PrettyFormatter extends Formatter {
         }
     }
 
+    startTestRun() {
+        this.progressBar.start(0, 0);
+    }
+
     readStepDefinition(stepDefinition) {
         const definition = stepDefinition.stepDefinition ?? stepDefinition.hook;
         this.stepDefinitions[definition.id] = {
@@ -101,6 +116,7 @@ class PrettyFormatter extends Formatter {
     }
 
     readTestCase(testCase) {
+        this.totalTestCases++;
         const pickleSteps = this.testCases[testCase.pickleId].steps;
         this.testCases[testCase.id] = this.testCases[testCase.pickleId];
         this.testCases[testCase.id].testSteps = testCase.testSteps;
@@ -125,10 +141,12 @@ class PrettyFormatter extends Formatter {
     }
 
     finishTestRun() {
+        this.progressBar.stop();
         const duration = new Date(Date.now() - this.startTimestamp);
         const passRate = this.runStatus.passed / this.runStatus.total;
         const failRate = this.runStatus.failed / this.runStatus.total;
         console.log(
+            ' ' +
             chalk.green(figures.square.repeat(Math.round(passRate * this.barChartLength))) +
             chalk.red(figures.square.repeat(Math.round(failRate * this.barChartLength)))
         );
@@ -138,7 +156,7 @@ class PrettyFormatter extends Formatter {
     }
 
     finishTestCase(testCase) {
-        if (testCase.willBeRetried) return
+        if (testCase.willBeRetried) return;
         const result = this.eventDataCollector.getTestCaseAttempt(testCase.testCaseStartedId);
         const tc = this.testCases[testCase.testCaseStartedId];
         tc.testSteps.forEach(step => {
@@ -146,14 +164,17 @@ class PrettyFormatter extends Formatter {
             step.logs = result.stepAttachments[step.id]?.filter(attachment => attachment.mediaType === 'text/x.cucumber.log+plain') ?? [];
         });
         this.updateRunStatus(tc);
-        const lines = [];
+        const lines = [''];
         if (tc.tags.length > 0) {
             lines.push(chalk.cyan(tc.tags.map(tag => tag.name).join(' ')));
         }
         lines.push(chalk.magenta('Scenario: ') + tc.name);
         lines.push(...tc.testSteps.map(step => this.drawStep(step)));
         lines.push('');
-        console.log(lines.join('\n'))
+        console.log(lines.join('\n'));
+        this.progressBar.setTotal(this.totalTestCases);
+        this.doneTestCases++;
+        this.progressBar.increment(1);
     }
 
     drawStep(step) {
