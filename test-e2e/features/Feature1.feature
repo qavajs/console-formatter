@@ -34,3 +34,11 @@ Feature: Feature1
 
   Scenario: some name
     When failed step
+
+  Scenario Outline: scenario passed <example>
+    When passed step
+
+    Examples:
+      | example |
+      | first   |
+      | second  |
