@@ -57,19 +57,21 @@ class PrettyFormatter extends Formatter {
     };
     barChartLength = 60;
     totalTestCases = 0;
-    doneTestCases = 0;
 
     constructor(options) {
         super(options);
         options.eventBroadcaster.on('envelope', this.processEnvelope.bind(this));
         this.formatterOptions = options.parsedArgvOptions.console;
         this.showLogs = this.formatterOptions?.showLogs ?? false;
+        this.showProgress = this.formatterOptions?.showProgress ?? true;
         this.startTimestamp = Date.now();
-        this.progressBar = new SingleBar({
-            emptyOnZero: true,
-            fps: 2,
-            barsize: this.barChartLength
-        }, Presets.shades_classic);
+        if (this.showProgress) {
+            this.progressBar = new SingleBar({
+                emptyOnZero: true,
+                fps: 2,
+                barsize: this.barChartLength
+            }, Presets.shades_classic);
+        }
     }
 
     async processEnvelope(envelope) {
@@ -100,7 +102,9 @@ class PrettyFormatter extends Formatter {
     }
 
     startTestRun() {
-        this.progressBar.start(0, 0);
+        if (this.showProgress) {
+            this.progressBar.start(0, 0);
+        }
     }
 
     readStepDefinition(stepDefinition) {
@@ -141,7 +145,9 @@ class PrettyFormatter extends Formatter {
     }
 
     finishTestRun() {
-        this.progressBar.stop();
+        if (this.showProgress) {
+            this.progressBar.stop();
+        }
         const duration = new Date(Date.now() - this.startTimestamp);
         const passRate = this.runStatus.passed / this.runStatus.total;
         const failRate = this.runStatus.failed / this.runStatus.total;
@@ -172,9 +178,10 @@ class PrettyFormatter extends Formatter {
         lines.push(...tc.testSteps.map(step => this.drawStep(step)));
         lines.push('');
         console.log(lines.join('\n'));
-        this.progressBar.setTotal(this.totalTestCases);
-        this.doneTestCases++;
-        this.progressBar.increment(1);
+        if (this.showProgress) {
+            this.progressBar.setTotal(this.totalTestCases);
+            this.progressBar.increment(1);
+        }
     }
 
     drawStep(step) {
@@ -227,18 +234,16 @@ class PrettyFormatter extends Formatter {
     }
 
     stepGherkinLocation(step, scenario) {
-        if (step.pickleStepId) {
-            const [ scenarioPickleId ] = scenario.pickle.astNodeIds;
-            const pickle = scenario.pickle.steps.find(e => e.id === step.pickleStepId);
-            const [ astNodeId] = pickle.astNodeIds;
-            const children = scenario.gherkinDocument.feature.children;
-            const scenarioSource = children.find(child => child.scenario?.id === scenarioPickleId);
-            const backgroundSource = children.find(child => child.background);
-            const stepsSources = [].concat(scenarioSource?.scenario?.steps).concat(backgroundSource?.background?.steps).filter(x => x);
-            const stepSource = stepsSources.find(s => s.id === astNodeId);
-            return stepSource ? `${scenario.gherkinDocument.uri}:${stepSource.location.line} ` : '';
-        }
-        return '';
+        if (!step.pickleStepId) return '';
+        const [ scenarioPickleId ] = scenario.pickle.astNodeIds;
+        const pickle = scenario.pickle.steps.find(e => e.id === step.pickleStepId);
+        const [ astNodeId] = pickle.astNodeIds;
+        const children = scenario.gherkinDocument.feature.children;
+        const scenarioSource = children.find(child => child.scenario?.id === scenarioPickleId);
+        const backgroundSource = children.find(child => child.background);
+        const stepsSources = [].concat(scenarioSource?.scenario?.steps).concat(backgroundSource?.background?.steps).filter(x => x);
+        const stepSource = stepsSources.find(s => s.id === astNodeId);
+        return stepSource ? `${scenario.gherkinDocument.uri}:${stepSource.location.line} ` : '';
     }
 
 }
