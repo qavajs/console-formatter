@@ -1,3 +1,6 @@
+## 0.7.1
+- added _showProgress_ config option to enable/disable progress bar
+
 ## 0.7.0
 - print progress of executing tests
 

@@ -6,7 +6,8 @@ module.exports = {
         format: ['./src/formatter.js', 'json:test-e2e/report/report.json'],
         formatOptions: {
             console: {
-                showLogs: true
+                showLogs: true,
+                showProgress: true
             }
         }
     }
