@@ -15,7 +15,8 @@ module.exports = {
         format: ['@qavajs/console-formatter'],
         formatOptions: {
             console: {
-                showLogs: true // show this.log entries in output. Default - false
+                showLogs: true, // show this.log entries in output. Default - false
+                showProgress: true, // show progress bar. Default - true
             }
         },
     }
