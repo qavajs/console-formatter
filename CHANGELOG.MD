@@ -1,3 +1,6 @@
+## 0.7.2
+- made _showProgress_ false by default
+
 ## 0.7.1
 - added _showProgress_ config option to enable/disable progress bar
 
