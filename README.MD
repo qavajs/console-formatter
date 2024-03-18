@@ -1,6 +1,6 @@
 # @qavajs/console-formatter
 
-Console formatter for cucumber framework
+Console formatter for @qavajs and cucumberjs frameworks
 
 ### Installation
 To install formatter run
@@ -15,7 +15,8 @@ module.exports = {
         format: ['@qavajs/console-formatter'],
         formatOptions: {
             console: {
-                showLogs: true // show this.log entries in output. Default - false
+                showLogs: true, // show this.log entries in output. Default - false
+                showProgress: false // show progress bar. Default - false 
             }
         },
     }

@@ -63,7 +63,7 @@ class PrettyFormatter extends Formatter {
         options.eventBroadcaster.on('envelope', this.processEnvelope.bind(this));
         this.formatterOptions = options.parsedArgvOptions.console;
         this.showLogs = this.formatterOptions?.showLogs ?? false;
-        this.showProgress = this.formatterOptions?.showProgress ?? true;
+        this.showProgress = this.formatterOptions?.showProgress ?? false;
         this.startTimestamp = Date.now();
         if (this.showProgress) {
             this.progressBar = new SingleBar({
