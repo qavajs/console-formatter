@@ -9,6 +9,7 @@ module.exports = {
                 showLogs: true,
                 showProgress: true
             }
-        }
+        },
+        retry: 2
     }
 }
