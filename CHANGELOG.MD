@@ -1,3 +1,6 @@
+## 0.8.0
+- included retries info to total report
+
 ## 0.7.2
 - made _showProgress_ false by default
 

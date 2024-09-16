@@ -53,7 +53,8 @@ class PrettyFormatter extends Formatter {
     runStatus = {
         passed: 0,
         failed: 0,
-        total: 0
+        total: 0,
+        totalWithRetries: 0
     };
     barChartLength = 60;
     totalTestCases = 0;
@@ -158,10 +159,12 @@ class PrettyFormatter extends Formatter {
         );
         console.log(`Passed: ${this.runStatus.passed} (${Math.round(passRate * 10000) / 100}%)`);
         console.log(`Failed: ${this.runStatus.failed} (${Math.round(failRate * 10000) / 100}%)`);
-        console.log(`Total: ${this.runStatus.total} (${duration.getMinutes()}m ${duration.getSeconds()}s)`);
+        console.log(`Total: ${this.runStatus.total} (with retries: ${this.runStatus.totalWithRetries})`);
+        console.log(`Duration: ${duration.getMinutes()}m ${duration.getSeconds()}s`);
     }
 
     finishTestCase(testCase) {
+        this.runStatus.totalWithRetries++;
         if (testCase.willBeRetried) return;
         const result = this.eventDataCollector.getTestCaseAttempt(testCase.testCaseStartedId);
         const tc = this.testCases[testCase.testCaseStartedId];
