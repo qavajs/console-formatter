@@ -9,16 +9,14 @@ To install formatter run
 
 and add to formatter section in config file
 
-```javascript
-module.exports = {
-    default: {
-        format: ['@qavajs/console-formatter'],
-        formatOptions: {
-            console: {
-                showLogs: true, // show this.log entries in output. Default - false
-                showProgress: false // show progress bar. Default - false 
-            }
-        },
+```typescript
+export default {
+    format: ['@qavajs/console-formatter'],
+    formatOptions: {
+        console: {
+            showLogs: true, // show this.log entries in output. Default - false
+            showProgress: false // show progress bar. Default - false 
+        }
     }
 }
 ```
