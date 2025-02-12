@@ -1,3 +1,22 @@
+# Change Log
+
+All notable changes to the "@qavajs/console-formatter" will be documented in this file.
+
+Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+
+:rocket: - new feature
+
+:beetle: - bugfix
+
+:x: - deprecation/removal
+
+:pencil: - chore
+
+:microscope: - experimental
+
+## [1.0.0]
+- :beetle: added hours to result output
+
 ## 0.8.0
 - included retries info to total report
 

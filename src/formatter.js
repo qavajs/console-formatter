@@ -6,11 +6,6 @@ const { SingleBar, Presets} = require('cli-progress');
 
 class PrettyFormatter extends Formatter {
     indent = '  ';
-    keywords = {
-        Context: 'Given',
-        Action: 'When',
-        Outcome: 'Then'
-    };
     statusColors = {
         [Status.PASSED]: 'green',
         [Status.FAILED]: 'red',
@@ -149,7 +144,7 @@ class PrettyFormatter extends Formatter {
         if (this.showProgress) {
             this.progressBar.stop();
         }
-        const duration = new Date(Date.now() - this.startTimestamp);
+        const duration = Date.now() - this.startTimestamp;
         const passRate = this.runStatus.passed / this.runStatus.total;
         const failRate = this.runStatus.failed / this.runStatus.total;
         console.log(
@@ -160,7 +155,7 @@ class PrettyFormatter extends Formatter {
         console.log(`Passed: ${this.runStatus.passed} (${Math.round(passRate * 10000) / 100}%)`);
         console.log(`Failed: ${this.runStatus.failed} (${Math.round(failRate * 10000) / 100}%)`);
         console.log(`Total: ${this.runStatus.total} (with retries: ${this.runStatus.totalWithRetries})`);
-        console.log(`Duration: ${duration.getMinutes()}m ${duration.getSeconds()}s`);
+        console.log(this.formatDuration(duration));
     }
 
     finishTestCase(testCase) {
@@ -247,6 +242,20 @@ class PrettyFormatter extends Formatter {
         const stepsSources = [].concat(scenarioSource?.scenario?.steps).concat(backgroundSource?.background?.steps).filter(x => x);
         const stepSource = stepsSources.find(s => s.id === astNodeId);
         return stepSource ? `${scenario.gherkinDocument.uri}:${stepSource.location.line} ` : '';
+    }
+
+    formatDuration(ms) {
+        if (ms <= 0) return '0s';
+        const seconds = Math.floor(ms / 1000);
+        const minutes = Math.floor(seconds / 60);
+        const hours = Math.floor(minutes / 60);
+        const remainingSeconds = seconds % 60;
+        const remainingMinutes = minutes % 60;
+        let result = 'Duration: ';
+        if (hours > 0) result += `${hours}h `;
+        if (remainingMinutes > 0) result += `${remainingMinutes}m `;
+        if (remainingSeconds > 0 || result === '') result += `${remainingSeconds}s`;
+        return result.trim();
     }
 
 }
