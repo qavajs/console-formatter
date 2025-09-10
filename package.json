@@ -1,6 +1,6 @@
 {
   "name": "@qavajs/console-formatter",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "console formatter for cucumber framework",
   "scripts": {
     "test:e2e": "qavajs run --config test-e2e/config.js"
@@ -10,10 +10,6 @@
     "type": "git",
     "url": "git+https://github.com/qavajs/console-formatter.git"
   },
-  "keywords": [
-    "cucumber",
-    "formatter"
-  ],
   "authors": [
     "Alexander Galichenko",
     "Alexandr Legchilov"
@@ -24,14 +20,40 @@
   },
   "homepage": "https://github.com/qavajs/console-formatter#readme",
   "dependencies": {
-    "chalk": "^4.1.2",
+    "chalk": "^5.6.2",
     "cli-progress": "^3.12.0",
     "cli-table3": "^0.6.5",
     "figures": "^3.2.0"
   },
   "devDependencies": {
-    "@cucumber/cucumber": "^11.2.0",
-    "@qavajs/core": "^2.3.0",
+    "@cucumber/cucumber": "^12.2.0",
+    "@qavajs/core": "^2.6.0",
     "@qavajs/memory": "^1.10.2"
-  }
+  },
+  "keywords": [
+    "cucumber",
+    "formatter",
+    "test",
+    "automation",
+    "testing",
+    "qa",
+    "quality-assurance",
+    "test-framework",
+    "test-runner",
+    "test-automation",
+    "e2e",
+    "end-to-end",
+    "ui-testing",
+    "integration-testing",
+    "acceptance-testing",
+    "functional-testing",
+    "browser-testing",
+    "mobile-testing",
+    "cross-browser",
+    "bdd",
+    "gherkin",
+    "assertions",
+    "continuous-delivery",
+    "automation-framework"
+  ]
 }

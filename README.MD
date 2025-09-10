@@ -3,11 +3,11 @@
 Console formatter for @qavajs and cucumberjs frameworks
 
 ### Installation
-To install formatter run
+```
+npm install @qavajs/console-formatter
+```
 
-`npm install @qavajs/console-formatter`
-
-and add to formatter section in config file
+add `@qavajs/console-formatter` to `format` property and configure in `formatOptions` property
 
 ```typescript
 export default {
