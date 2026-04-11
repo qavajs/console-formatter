@@ -1,29 +1,30 @@
 # @qavajs/console-formatter
 
-Console formatter for @qavajs and cucumberjs frameworks
+Console formatter for @qavajs and cucumberjs frameworks.
 
 ### Installation
 ```
 npm install @qavajs/console-formatter
 ```
 
-add `@qavajs/console-formatter` to `format` property and configure in `formatOptions` property
+Add `@qavajs/console-formatter` to the `format` property and configure it via `formatOptions`:
 
 ```typescript
 export default {
     format: ['@qavajs/console-formatter'],
     formatOptions: {
         console: {
-            showLogs: true, // show this.log entries in output. Default - false
-            showProgress: false // show progress bar. Default - false 
+            showLogs: true,     // print this.log() entries below each step. Default: false
+            showProgress: false // show progress bar during execution. Default: false
         }
     }
 }
 ```
 
-or pass `--format @qavajs/console-formatter in cli`
-             
+Or pass via CLI:
+
+```
+--format @qavajs/console-formatter
+```
+
 ![](assets/report_example.png)
-
-
-
