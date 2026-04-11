@@ -14,6 +14,11 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 :microscope: - experimental
 
+## [2.0.0]
+- :x: removed runtime dependencies (chalk, cli-table3, cli-progress, figures)
+- :pencil: migrated source to TypeScript
+- :pencil: compiled output moved to dist/
+
 ## [1.0.0]
 - :beetle: added hours to result output
 

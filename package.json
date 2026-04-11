@@ -1,11 +1,13 @@
 {
   "name": "@qavajs/console-formatter",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "console formatter for cucumber framework",
   "scripts": {
-    "test:e2e": "qavajs run --config test-e2e/config.js"
+    "build": "tsc",
+    "test:e2e": "npm run build && qavajs run --config test-e2e/config.js"
   },
-  "main": "src/formatter.js",
+  "main": "dist/formatter.js",
+  "types": "dist/formatter.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/qavajs/console-formatter.git"
@@ -19,16 +21,12 @@
     "url": "https://github.com/qavajs/console-formatter/issues"
   },
   "homepage": "https://github.com/qavajs/console-formatter#readme",
-  "dependencies": {
-    "chalk": "^4.1.2",
-    "cli-progress": "^3.12.0",
-    "cli-table3": "^0.6.5",
-    "figures": "^3.2.0"
-  },
   "devDependencies": {
-    "@cucumber/cucumber": "^12.2.0",
-    "@qavajs/core": "^2.6.0",
-    "@qavajs/memory": "^1.10.2"
+    "@cucumber/cucumber": "^12.7.0",
+    "@qavajs/core": "^2.13.0",
+    "@qavajs/memory": "^1.11.0",
+    "@types/node": "^25.6.0",
+    "typescript": "^6.0.2"
   },
   "keywords": [
     "cucumber",
