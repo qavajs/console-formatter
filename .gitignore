@@ -1,3 +1,4 @@
 node_modules/
 dist/
 test-e2e/reports/
+test-e2e/report/
