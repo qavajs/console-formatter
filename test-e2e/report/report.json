@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 271165
+              "duration": 257416
             }
           },
           {
@@ -22,7 +22,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 400664709
+              "duration": 401590000
             }
           },
           {
@@ -30,7 +30,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 266624
+              "duration": 156999
             }
           },
           {
@@ -43,7 +43,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 282000
+              "duration": 197457
             }
           },
           {
@@ -73,7 +73,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 289083
+              "duration": 199791
             }
           },
           {
@@ -86,7 +86,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 95125
+              "duration": 76291
             }
           },
           {
@@ -94,7 +94,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 32665
+              "duration": 41500
             }
           },
           {
@@ -102,7 +102,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 22375
+              "duration": 27832
             }
           }
         ],
@@ -130,7 +130,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 270541
+              "duration": 213916
             }
           },
           {
@@ -138,7 +138,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 400517458
+              "duration": 401497708
             }
           },
           {
@@ -146,7 +146,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 92208
+              "duration": 95458
             }
           },
           {
@@ -159,7 +159,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 94708
+              "duration": 136457
             }
           },
           {
@@ -177,7 +177,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 152209
+              "duration": 241917
             }
           },
           {
@@ -190,7 +190,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 29624
+              "duration": 64833
             }
           },
           {
@@ -198,7 +198,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 10541
+              "duration": 22290
             }
           },
           {
@@ -206,7 +206,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 11083
+              "duration": 20499
             }
           }
         ],
@@ -254,7 +254,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 121624
+              "duration": 206750
             }
           },
           {
@@ -262,7 +262,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 401374666
+              "duration": 400641415
             }
           },
           {
@@ -270,7 +270,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 31625
+              "duration": 58082
             }
           },
           {
@@ -283,7 +283,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 67499
+              "duration": 116083
             }
           },
           {
@@ -296,7 +296,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 22334
+              "duration": 41958
             }
           },
           {
@@ -304,7 +304,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 8458
+              "duration": 13916
             }
           },
           {
@@ -312,7 +312,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 5792
+              "duration": 20209
             }
           }
         ],
@@ -331,7 +331,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 148208
+              "duration": 167917
             }
           },
           {
@@ -339,7 +339,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 401387375
+              "duration": 401412749
             }
           },
           {
@@ -347,7 +347,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 57624
+              "duration": 55124
             }
           },
           {
@@ -360,7 +360,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 113457
+              "duration": 108625
             }
           },
           {
@@ -373,7 +373,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 36958
+              "duration": 36625
             }
           },
           {
@@ -386,7 +386,7 @@
             },
             "result": {
               "status": "failed",
-              "duration": 99083,
+              "duration": 96290,
               "error_message": "Error: failed step\n    at World.<anonymous> (/Users/oleksandrhalichenko/GIT/console-formatter/test-e2e/step_definitions/custom_steps.js:9:35)"
             }
           },
@@ -408,7 +408,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 41374
+              "duration": 20583
             }
           },
           {
@@ -416,7 +416,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 16458
+              "duration": 13625
             }
           }
         ],
@@ -435,7 +435,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 136541
+              "duration": 181165
             }
           },
           {
@@ -443,7 +443,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 401367749
+              "duration": 401410582
             }
           },
           {
@@ -451,7 +451,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 55000
+              "duration": 53957
             }
           },
           {
@@ -464,7 +464,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 100542
+              "duration": 103499
             }
           },
           {
@@ -477,7 +477,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 35916
+              "duration": 34834
             }
           },
           {
@@ -495,7 +495,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 26292
+              "duration": 28708
             }
           },
           {
@@ -503,7 +503,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 8374
+              "duration": 10041
             }
           }
         ],
@@ -522,7 +522,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 149292
+              "duration": 123166
             }
           },
           {
@@ -530,7 +530,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 401248375
+              "duration": 401439207
             }
           },
           {
@@ -538,7 +538,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 36666
+              "duration": 62332
             }
           },
           {
@@ -551,7 +551,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 71457
+              "duration": 139125
             }
           },
           {
@@ -564,7 +564,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 35750
+              "duration": 67290
             }
           },
           {
@@ -582,7 +582,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 34708
+              "duration": 28874
             }
           },
           {
@@ -590,7 +590,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 7208
+              "duration": 8166
             }
           }
         ],
@@ -609,7 +609,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 158416
+              "duration": 106582
             }
           },
           {
@@ -617,7 +617,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 400523249
+              "duration": 401439875
             }
           },
           {
@@ -625,7 +625,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 84334
+              "duration": 67000
             }
           },
           {
@@ -638,7 +638,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 159540
+              "duration": 126957
             }
           },
           {
@@ -651,7 +651,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 60999
+              "duration": 51457
             }
           },
           {
@@ -664,7 +664,7 @@
             },
             "result": {
               "status": "pending",
-              "duration": 151125
+              "duration": 128416
             }
           },
           {
@@ -672,7 +672,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 17792
+              "duration": 16083
             }
           },
           {
@@ -680,7 +680,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 13749
+              "duration": 16208
             }
           }
         ],
@@ -699,7 +699,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 207625
+              "duration": 200041
             }
           },
           {
@@ -707,7 +707,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 401425999
+              "duration": 401415000
             }
           },
           {
@@ -715,7 +715,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 81083
+              "duration": 42290
             }
           },
           {
@@ -728,7 +728,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 108041
+              "duration": 94249
             }
           },
           {
@@ -741,7 +741,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 43916
+              "duration": 45624
             }
           },
           {
@@ -749,7 +749,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 21958
+              "duration": 17417
             }
           },
           {
@@ -757,7 +757,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 24750
+              "duration": 14416
             }
           }
         ],
@@ -861,7 +861,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 136000
+              "duration": 127707
             }
           },
           {
@@ -869,7 +869,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 401192291
+              "duration": 401386333
             }
           },
           {
@@ -877,7 +877,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 22625
+              "duration": 56540
             }
           },
           {
@@ -890,7 +890,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 42583
+              "duration": 102958
             }
           },
           {
@@ -903,7 +903,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 16583
+              "duration": 41291
             }
           },
           {
@@ -911,7 +911,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 5917
+              "duration": 14165
             }
           },
           {
@@ -919,7 +919,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 4833
+              "duration": 12250
             }
           }
         ],
@@ -938,7 +938,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 125124
+              "duration": 93084
             }
           },
           {
@@ -946,7 +946,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 400216000
+              "duration": 401378582
             }
           },
           {
@@ -954,7 +954,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 45124
+              "duration": 68124
             }
           },
           {
@@ -967,7 +967,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 115332
+              "duration": 184457
             }
           },
           {
@@ -980,7 +980,7 @@
             },
             "result": {
               "status": "failed",
-              "duration": 88916,
+              "duration": 124499,
               "error_message": "Error: failed step\n    at World.<anonymous> (/Users/oleksandrhalichenko/GIT/console-formatter/test-e2e/step_definitions/custom_steps.js:9:35)"
             }
           },
@@ -989,7 +989,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 6833
+              "duration": 20166
             }
           },
           {
@@ -997,7 +997,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 4917
+              "duration": 12666
             }
           }
         ],
@@ -1016,7 +1016,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 91457
+              "duration": 151667
             }
           },
           {
@@ -1024,7 +1024,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 401300333
+              "duration": 401105500
             }
           },
           {
@@ -1032,7 +1032,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 90500
+              "duration": 93417
             }
           },
           {
@@ -1045,7 +1045,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 105582
+              "duration": 140083
             }
           },
           {
@@ -1058,7 +1058,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 36832
+              "duration": 59792
             }
           },
           {
@@ -1066,7 +1066,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 22625
+              "duration": 22249
             }
           },
           {
@@ -1074,7 +1074,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 12249
+              "duration": 20083
             }
           }
         ],
@@ -1093,7 +1093,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 138625
+              "duration": 174834
             }
           },
           {
@@ -1101,7 +1101,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 401415541
+              "duration": 401418916
             }
           },
           {
@@ -1109,7 +1109,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 92875
+              "duration": 60250
             }
           },
           {
@@ -1122,7 +1122,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 124832
+              "duration": 138249
             }
           },
           {
@@ -1135,7 +1135,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 49125
+              "duration": 57291
             }
           },
           {
@@ -1143,7 +1143,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 23125
+              "duration": 14166
             }
           },
           {
@@ -1151,7 +1151,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 20250
+              "duration": 19917
             }
           }
         ],
@@ -1181,7 +1181,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 139040
+              "duration": 160957
             }
           },
           {
@@ -1189,7 +1189,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 401333540
+              "duration": 401338334
             }
           },
           {
@@ -1197,7 +1197,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 54457
+              "duration": 58041
             }
           },
           {
@@ -1210,7 +1210,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 105457
+              "duration": 129167
             }
           },
           {
@@ -1223,7 +1223,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 106458
+              "duration": 111958
             }
           },
           {
@@ -1231,7 +1231,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 11124
+              "duration": 17707
             }
           },
           {
@@ -1239,7 +1239,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 13958
+              "duration": 12083
             }
           }
         ],
@@ -1275,7 +1275,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 401822541
+              "duration": 401461916
             }
           },
           {
@@ -1283,7 +1283,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 80915
+              "duration": 77917
             }
           },
           {
@@ -1296,7 +1296,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 174292
+              "duration": 115541
             }
           },
           {
@@ -1309,7 +1309,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 39749
+              "duration": 34832
             }
           },
           {
@@ -1322,7 +1322,7 @@
             },
             "result": {
               "status": "failed",
-              "duration": 89667,
+              "duration": 95459,
               "error_message": "Error: failed step\n    at World.<anonymous> (/Users/oleksandrhalichenko/GIT/console-formatter/test-e2e/step_definitions/custom_steps.js:9:35)"
             }
           },
@@ -1331,7 +1331,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 26250
+              "duration": 16166
             }
           },
           {
@@ -1339,7 +1339,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 6959
+              "duration": 11333
             }
           }
         ],
@@ -1363,7 +1363,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 97250
+              "duration": 119124
             }
           },
           {
@@ -1371,7 +1371,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 401290250
+              "duration": 401342249
             }
           },
           {
@@ -1379,7 +1379,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 44332
+              "duration": 64790
             }
           },
           {
@@ -1392,7 +1392,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 106999
+              "duration": 114792
             }
           },
           {
@@ -1405,7 +1405,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 23291
+              "duration": 49666
             }
           },
           {
@@ -1418,7 +1418,7 @@
             },
             "result": {
               "status": "failed",
-              "duration": 74125,
+              "duration": 120082,
               "error_message": "Error: failed step\n    at World.<anonymous> (/Users/oleksandrhalichenko/GIT/console-formatter/test-e2e/step_definitions/custom_steps.js:9:35)"
             }
           },
@@ -1427,7 +1427,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 12249
+              "duration": 30417
             }
           },
           {
@@ -1435,7 +1435,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 5916
+              "duration": 36625
             }
           }
         ],
@@ -1475,7 +1475,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 101624
+              "duration": 137833
             }
           },
           {
@@ -1483,7 +1483,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 400610667
+              "duration": 401303584
             }
           },
           {
@@ -1491,7 +1491,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 63916
+              "duration": 56540
             }
           },
           {
@@ -1504,7 +1504,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 129166
+              "duration": 109500
             }
           },
           {
@@ -1517,7 +1517,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 41957
+              "duration": 38082
             }
           },
           {
@@ -1525,7 +1525,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 13624
+              "duration": 12917
             }
           },
           {
@@ -1533,7 +1533,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 11000
+              "duration": 11291
             }
           }
         ],
@@ -1552,7 +1552,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 124916
+              "duration": 106166
             }
           },
           {
@@ -1560,7 +1560,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 401309707
+              "duration": 401320041
             }
           },
           {
@@ -1568,7 +1568,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 54833
+              "duration": 48500
             }
           },
           {
@@ -1581,7 +1581,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 113875
+              "duration": 113084
             }
           },
           {
@@ -1594,7 +1594,7 @@
             },
             "result": {
               "status": "failed",
-              "duration": 119375,
+              "duration": 108000,
               "error_message": "Error: failed step\n    at World.<anonymous> (/Users/oleksandrhalichenko/GIT/console-formatter/test-e2e/step_definitions/custom_steps.js:9:35)"
             }
           },
@@ -1603,7 +1603,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 40707
+              "duration": 17374
             }
           },
           {
@@ -1611,7 +1611,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 11958
+              "duration": 12875
             }
           }
         ],
@@ -1641,7 +1641,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 149374
+              "duration": 123374
             }
           },
           {
@@ -1649,7 +1649,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 401344833
+              "duration": 401415624
             }
           },
           {
@@ -1657,7 +1657,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 51332
+              "duration": 62542
             }
           },
           {
@@ -1670,7 +1670,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 903333
+              "duration": 984291
             },
             "embeddings": [
               {
@@ -1684,7 +1684,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 19374
+              "duration": 22291
             }
           },
           {
@@ -1692,7 +1692,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 11249
+              "duration": 12458
             }
           }
         ],
@@ -1711,7 +1711,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 113459
+              "duration": 155375
             }
           },
           {
@@ -1719,7 +1719,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 401391582
+              "duration": 401271541
             }
           },
           {
@@ -1727,7 +1727,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 55041
+              "duration": 50083
             }
           },
           {
@@ -1740,7 +1740,7 @@
             },
             "result": {
               "status": "failed",
-              "duration": 308250,
+              "duration": 292124,
               "error_message": "Error: failed step\n    at World.<anonymous> (/Users/oleksandrhalichenko/GIT/console-formatter/test-e2e/step_definitions/custom_steps.js:39:11)"
             },
             "embeddings": [
@@ -1755,7 +1755,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 35083
+              "duration": 20333
             }
           },
           {
@@ -1763,7 +1763,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 12290
+              "duration": 11042
             }
           }
         ],
