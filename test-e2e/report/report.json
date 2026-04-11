@@ -1,0 +1,1781 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "datatable-and-multiline;data-table",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "data table",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 271165
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 400664709
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 266624
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "background",
+            "match": {
+              "location": "test-e2e/step_definitions/custom_steps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 282000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "column1",
+                      "column2"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "value1",
+                      "value2"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 9,
+            "name": "data table step",
+            "match": {
+              "location": "test-e2e/step_definitions/custom_steps.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 289083
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "passed step",
+            "match": {
+              "location": "test-e2e/step_definitions/custom_steps.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 95125
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 32665
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 22375
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@data_table",
+            "line": 1
+          },
+          {
+            "name": "@multiline",
+            "line": 2
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "datatable-and-multiline;multiline-text",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "multiline text",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 270541
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 400517458
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 92208
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "background",
+            "match": {
+              "location": "test-e2e/step_definitions/custom_steps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 94708
+            }
+          },
+          {
+            "arguments": [
+              {
+                "content": "this\nis\nmultiline\ntext",
+                "line": 16
+              }
+            ],
+            "keyword": "When ",
+            "line": 15,
+            "name": "multiline step",
+            "match": {
+              "location": "test-e2e/step_definitions/custom_steps.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 152209
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 22,
+            "name": "passed step",
+            "match": {
+              "location": "test-e2e/step_definitions/custom_steps.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 29624
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 10541
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 11083
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@data_table",
+            "line": 1
+          },
+          {
+            "name": "@multiline",
+            "line": 2
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "datatable-and-multiline",
+    "line": 3,
+    "keyword": "Feature",
+    "name": "DataTable and Multiline",
+    "tags": [
+      {
+        "name": "@data_table",
+        "line": 1
+      },
+      {
+        "name": "@multiline",
+        "line": 2
+      }
+    ],
+    "uri": "test-e2e/features/DataTableMultiline.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "feature1;scenario-passed",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "scenario passed",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 121624
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 401374666
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 31625
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "background",
+            "match": {
+              "location": "test-e2e/step_definitions/custom_steps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 67499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "passed step",
+            "match": {
+              "location": "test-e2e/step_definitions/custom_steps.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 22334
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 8458
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 5792
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "feature1;scenario-failed",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "scenario failed",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 148208
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 401387375
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 57624
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "background",
+            "match": {
+              "location": "test-e2e/step_definitions/custom_steps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 113457
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "passed step",
+            "match": {
+              "location": "test-e2e/step_definitions/custom_steps.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 36958
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "failed step",
+            "match": {
+              "location": "test-e2e/step_definitions/custom_steps.js:9"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 99083,
+              "error_message": "Error: failed step\n    at World.<anonymous> (/Users/oleksandrhalichenko/GIT/console-formatter/test-e2e/step_definitions/custom_steps.js:9:35)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "passed step",
+            "match": {
+              "location": "test-e2e/step_definitions/custom_steps.js:8"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 41374
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 16458
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "feature1;scenario-undefined",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "scenario undefined",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 136541
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 401367749
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 55000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "background",
+            "match": {
+              "location": "test-e2e/step_definitions/custom_steps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 100542
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "passed step",
+            "match": {
+              "location": "test-e2e/step_definitions/custom_steps.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 35916
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "undefined step",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 26292
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 8374
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "feature1;scenario-ambiguous",
+        "keyword": "Scenario",
+        "line": 18,
+        "name": "scenario ambiguous",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 149292
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 401248375
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 36666
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "background",
+            "match": {
+              "location": "test-e2e/step_definitions/custom_steps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 71457
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "passed step",
+            "match": {
+              "location": "test-e2e/step_definitions/custom_steps.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 35750
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "ambiguous step",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 34708
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 7208
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "feature1;scenario-pending",
+        "keyword": "Scenario",
+        "line": 22,
+        "name": "scenario pending",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 158416
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 400523249
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 84334
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "background",
+            "match": {
+              "location": "test-e2e/step_definitions/custom_steps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 159540
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 23,
+            "name": "passed step",
+            "match": {
+              "location": "test-e2e/step_definitions/custom_steps.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 60999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 24,
+            "name": "pending step",
+            "match": {
+              "location": "test-e2e/step_definitions/custom_steps.js:10"
+            },
+            "result": {
+              "status": "pending",
+              "duration": 151125
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 17792
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 13749
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "feature1;too-many-tags-scenario-that-does-not-fit-to-the-title",
+        "keyword": "Scenario",
+        "line": 29,
+        "name": "too many tags scenario that does not fit to the title",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 207625
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 401425999
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 81083
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "background",
+            "match": {
+              "location": "test-e2e/step_definitions/custom_steps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 108041
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 30,
+            "name": "passed step",
+            "match": {
+              "location": "test-e2e/step_definitions/custom_steps.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 43916
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 21958
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 24750
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@there",
+            "line": 26
+          },
+          {
+            "name": "@is",
+            "line": 26
+          },
+          {
+            "name": "@too",
+            "line": 26
+          },
+          {
+            "name": "@many",
+            "line": 26
+          },
+          {
+            "name": "@tags",
+            "line": 26
+          },
+          {
+            "name": "@first_tag",
+            "line": 26
+          },
+          {
+            "name": "@second_tag",
+            "line": 26
+          },
+          {
+            "name": "@third_tag",
+            "line": 26
+          },
+          {
+            "name": "@fourth_tag",
+            "line": 27
+          },
+          {
+            "name": "@fifth_tag",
+            "line": 27
+          },
+          {
+            "name": "@and_so_on",
+            "line": 27
+          },
+          {
+            "name": "@etc",
+            "line": 27
+          },
+          {
+            "name": "@more_words",
+            "line": 28
+          },
+          {
+            "name": "@that",
+            "line": 28
+          },
+          {
+            "name": "@not",
+            "line": 28
+          },
+          {
+            "name": "@fit",
+            "line": 28
+          },
+          {
+            "name": "@to",
+            "line": 28
+          },
+          {
+            "name": "@the",
+            "line": 28
+          },
+          {
+            "name": "@scenario",
+            "line": 28
+          },
+          {
+            "name": "@title",
+            "line": 28
+          },
+          {
+            "name": "@panel",
+            "line": 28
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "feature1;some-name",
+        "keyword": "Scenario",
+        "line": 32,
+        "name": "some name",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 136000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 401192291
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 22625
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "background",
+            "match": {
+              "location": "test-e2e/step_definitions/custom_steps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 42583
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 33,
+            "name": "passed step",
+            "match": {
+              "location": "test-e2e/step_definitions/custom_steps.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16583
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 5917
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 4833
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "feature1;some-name",
+        "keyword": "Scenario",
+        "line": 35,
+        "name": "some name",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 125124
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 400216000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 45124
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "background",
+            "match": {
+              "location": "test-e2e/step_definitions/custom_steps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 115332
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 36,
+            "name": "failed step",
+            "match": {
+              "location": "test-e2e/step_definitions/custom_steps.js:9"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 88916,
+              "error_message": "Error: failed step\n    at World.<anonymous> (/Users/oleksandrhalichenko/GIT/console-formatter/test-e2e/step_definitions/custom_steps.js:9:35)"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 6833
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 4917
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "feature1;scenario-passed-first",
+        "keyword": "Scenario Outline",
+        "line": 43,
+        "name": "scenario passed first",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 91457
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 401300333
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 90500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "background",
+            "match": {
+              "location": "test-e2e/step_definitions/custom_steps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 105582
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 39,
+            "name": "passed step",
+            "match": {
+              "location": "test-e2e/step_definitions/custom_steps.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 36832
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 22625
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 12249
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "feature1;scenario-passed-second",
+        "keyword": "Scenario Outline",
+        "line": 44,
+        "name": "scenario passed second",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 138625
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 401415541
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 92875
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "background",
+            "match": {
+              "location": "test-e2e/step_definitions/custom_steps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 124832
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 39,
+            "name": "passed step",
+            "match": {
+              "location": "test-e2e/step_definitions/custom_steps.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 49125
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 23125
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 20250
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "feature1",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Feature1",
+    "tags": [],
+    "uri": "test-e2e/features/Feature1.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "feature2;scenario-passed-in-feature-2",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "scenario passed in feature 2",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 139040
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 401333540
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 54457
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "background",
+            "match": {
+              "location": "test-e2e/step_definitions/custom_steps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 105457
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "passed step",
+            "match": {
+              "location": "test-e2e/step_definitions/custom_steps.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 106458
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 11124
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 13958
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@feature_tag",
+            "line": 1
+          },
+          {
+            "name": "@scenario_tag",
+            "line": 7
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "feature2;scenario-failed-in-feature-2",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "scenario failed in feature 2",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 102499
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 401822541
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 80915
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "background",
+            "match": {
+              "location": "test-e2e/step_definitions/custom_steps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 174292
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "passed step",
+            "match": {
+              "location": "test-e2e/step_definitions/custom_steps.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 39749
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "failed step",
+            "match": {
+              "location": "test-e2e/step_definitions/custom_steps.js:9"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 89667,
+              "error_message": "Error: failed step\n    at World.<anonymous> (/Users/oleksandrhalichenko/GIT/console-formatter/test-e2e/step_definitions/custom_steps.js:9:35)"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 26250
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 6959
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@feature_tag",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "feature2;second-scenario-failed-in-feature-2",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "second scenario failed in feature 2",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 97250
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 401290250
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 44332
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "background",
+            "match": {
+              "location": "test-e2e/step_definitions/custom_steps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 106999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 16,
+            "name": "passed step",
+            "match": {
+              "location": "test-e2e/step_definitions/custom_steps.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 23291
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "failed step",
+            "match": {
+              "location": "test-e2e/step_definitions/custom_steps.js:9"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 74125,
+              "error_message": "Error: failed step\n    at World.<anonymous> (/Users/oleksandrhalichenko/GIT/console-formatter/test-e2e/step_definitions/custom_steps.js:9:35)"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 12249
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 5916
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@feature_tag",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "feature2",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Feature2",
+    "tags": [
+      {
+        "name": "@feature_tag",
+        "line": 1
+      }
+    ],
+    "uri": "test-e2e/features/Feature2.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "feature1;scenario-passed",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "scenario passed",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 101624
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 400610667
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 63916
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "background",
+            "match": {
+              "location": "test-e2e/step_definitions/custom_steps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 129166
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "passed step",
+            "match": {
+              "location": "test-e2e/step_definitions/custom_steps.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 41957
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 13624
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 11000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "feature1;some-name",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "some name",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 124916
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 401309707
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 54833
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "background",
+            "match": {
+              "location": "test-e2e/step_definitions/custom_steps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 113875
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "failed step",
+            "match": {
+              "location": "test-e2e/step_definitions/custom_steps.js:9"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 119375,
+              "error_message": "Error: failed step\n    at World.<anonymous> (/Users/oleksandrhalichenko/GIT/console-formatter/test-e2e/step_definitions/custom_steps.js:9:35)"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 40707
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 11958
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "feature1",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Feature1",
+    "tags": [],
+    "uri": "test-e2e/features/Feature3as1.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "logs;scenario-passed-with-logs",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "scenario passed with logs",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 149374
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 401344833
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 51332
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 4,
+            "name": "passed step with log",
+            "match": {
+              "location": "test-e2e/step_definitions/custom_steps.js:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 903333
+            },
+            "embeddings": [
+              {
+                "data": "c29tZSBpbmZvcm1hdGlvbiBpbiBwYXNzZWQgc3RlcA==",
+                "mime_type": "text/x.cucumber.log+plain"
+              }
+            ]
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 19374
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 11249
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "logs;scenario-failed-with-logs",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "scenario failed with logs",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 113459
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 401391582
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 55041
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "failed step with log",
+            "match": {
+              "location": "test-e2e/step_definitions/custom_steps.js:37"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 308250,
+              "error_message": "Error: failed step\n    at World.<anonymous> (/Users/oleksandrhalichenko/GIT/console-formatter/test-e2e/step_definitions/custom_steps.js:39:11)"
+            },
+            "embeddings": [
+              {
+                "data": "c29tZSBpbmZvcm1hdGlvbiBpbiBmYWlsZWQgc3RlcA==",
+                "mime_type": "text/x.cucumber.log+plain"
+              }
+            ]
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 35083
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 12290
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "logs",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Logs",
+    "tags": [],
+    "uri": "test-e2e/features/Logs.feature"
+  }
+]
