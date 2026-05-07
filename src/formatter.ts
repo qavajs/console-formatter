@@ -279,7 +279,7 @@ class PrettyFormatter extends Formatter {
     lines.push(colorize('magenta', 'Scenario: ') + tc.name);
     lines.push(...tc.testSteps.map(step => this.drawStep(step)));
     lines.push('');
-    console.log(lines.join('\n'));
+    this.log(lines.join('\n') + '\n');
 
     if (this.showProgress) {
       this.progressBar!.setTotal(this.totalTestCases);
@@ -295,15 +295,16 @@ class PrettyFormatter extends Formatter {
     const passRate = this.runStatus.passed / this.runStatus.total;
     const failRate = this.runStatus.failed / this.runStatus.total;
     const SQUARE = '\u2587'; // ▇  — same as figures.square
-    console.log(
+    this.log(
       ' ' +
       colorize('green', SQUARE.repeat(Math.round(passRate * this.barChartLength))) +
-      colorize('red', SQUARE.repeat(Math.round(failRate * this.barChartLength)))
+      colorize('red', SQUARE.repeat(Math.round(failRate * this.barChartLength))) +
+      '\n'
     );
-    console.log(`Passed: ${this.runStatus.passed} (${Math.round(passRate * 10000) / 100}%)`);
-    console.log(`Failed: ${this.runStatus.failed} (${Math.round(failRate * 10000) / 100}%)`);
-    console.log(`Total: ${this.runStatus.total} (with retries: ${this.runStatus.totalWithRetries})`);
-    console.log(this.formatDuration(duration));
+    this.log(`Passed: ${this.runStatus.passed} (${Math.round(passRate * 10000) / 100}%)\n`);
+    this.log(`Failed: ${this.runStatus.failed} (${Math.round(failRate * 10000) / 100}%)\n`);
+    this.log(`Total: ${this.runStatus.total} (with retries: ${this.runStatus.totalWithRetries})\n`);
+    this.log(this.formatDuration(duration) + '\n');
   }
 
   // -----------------------------------------------------------------------

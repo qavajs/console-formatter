@@ -1,6 +1,6 @@
 {
   "name": "@qavajs/console-formatter",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "console formatter for cucumber framework",
   "scripts": {
     "build": "tsc",
@@ -22,11 +22,11 @@
   },
   "homepage": "https://github.com/qavajs/console-formatter#readme",
   "devDependencies": {
-    "@cucumber/cucumber": "^12.7.0",
-    "@qavajs/core": "^2.13.0",
+    "@cucumber/cucumber": "^12.8.2",
+    "@qavajs/core": "^2.16.0",
     "@qavajs/memory": "^1.11.0",
     "@types/node": "^25.6.0",
-    "typescript": "^6.0.2"
+    "typescript": "^6.0.3"
   },
   "keywords": [
     "cucumber",
