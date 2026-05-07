@@ -14,7 +14,10 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 :microscope: - experimental
 
-## [2.0.0]
+## [1.2.1]
+- :beetle: replaced `console.log` calls with `this.log()` to write through the formatter's configured output stream
+
+## [1.2.0]
 - :x: removed runtime dependencies (chalk, cli-table3, cli-progress, figures)
 - :pencil: migrated source to TypeScript
 - :pencil: compiled output moved to dist/
